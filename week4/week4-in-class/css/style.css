@@ -1,0 +1,15 @@
+#area{
+	background-color: lightgray;
+	width:255px;
+	height:255px;
+
+	position: absolute;
+	left:100px;
+	top:100px;
+
+}
+
+body{
+width:800px;
+height:800px;
+	}

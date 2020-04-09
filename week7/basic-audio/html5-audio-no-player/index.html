@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Audio Example</title>
+	<style>
+
+	audio {
+		background-color: green;
+	}
+
+	</style>
+
+</head>
+
+	<body>
+		<button onclick="playAudio()">Click to play</button>
+		<button onclick="pauseAudio()">Click to pause</button>
+		<button onclick="stopAudio()">Click to stop</button>
+
+		<audio loop id="myAudio">
+			<source src="audio/amen-break.wav" type="audio/wav">
+				Your browser does not support the audio element.
+		</audio>
+
+		<script>
+			var a = document.getElementById("myAudio");
+
+			function playAudio() {
+				a.play();
+			}
+
+			function pauseAudio() {
+				a.pause();
+			}
+
+			function stopAudio() {
+				a.currentTime = 0;
+				a.pause();
+			}
+
+		</script>
+
+	</body>
+	

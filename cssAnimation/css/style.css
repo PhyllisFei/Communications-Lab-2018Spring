@@ -1,0 +1,78 @@
+.square{
+	height: 200px;
+	background-color: red;
+	width: 200px;
+	animation-name: rotateAround;
+	animation-duration: 5s;
+	animation-iteration-count:inherit;
+	animation-direction: alternate;
+	transform;
+}
+
+.circle{
+	height: 200px;
+	background-color: blue;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.ellipse{
+	height: 100px;
+	background-color: green;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.triangle{
+	height: 0;
+	/* background-color: yellow; */
+	width: 0;
+	border-style: solid;
+	border-width: 150px;
+	border-top-color: red;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	border-right-color: red;
+	animation-name: changeBG;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-delay: 0s;
+	animation-direction: alternate;
+	animation-timing-function: steps(5);/*linear;*/
+}
+
+@keyframes changeBG{
+	0% { /*from{*/
+		border-top-color: green;
+		border-right-color: green;
+		margin-left: 0px;
+	}
+
+	50% {
+		border-width: 300px;
+	}
+
+	100% { /*to{*/
+		border-top-color: blue;
+		border-right-color: yellow;
+		margin-left: 150px
+	}
+}
+
+@keyframes rotateAround{
+	0%{
+		background-color: red;
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(0.5);
+	}
+
+	50%{
+		background-color: green;
+		transform: rotateX(120deg) rotateY(230deg) rotateZ(30deg) scaleX(5.0) scaleY(0.5);
+	}
+
+	100%{
+		background-color: pink;
+		transform: rotateX(0deg) rotateY(80deg) rotateZ(300deg) scaleX(0.1) scaleY(10);
+	}
+}

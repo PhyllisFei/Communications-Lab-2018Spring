@@ -1,0 +1,15 @@
+p {
+	color: red;
+}
+
+
+.header{
+	background-color: rgb(0,255,0);
+	height:100px;
+}
+.content{
+	background-color: gray;
+}	
+.footer{
+	background-color: #0F0;
+}
